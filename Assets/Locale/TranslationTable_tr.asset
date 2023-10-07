@@ -26,6 +26,22 @@ MonoBehaviour:
     m_Localized: "G\u0130R\u0130\u015E YAP"
     m_Metadata:
       m_Items: []
+  - m_Id: 1167542071984128
+    m_Localized: Karargah
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1167851599036416
+    m_Localized: LAB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1167906926100480
+    m_Localized: "At\xF6lye"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1167840622542848
+    m_Localized: Hangar
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
