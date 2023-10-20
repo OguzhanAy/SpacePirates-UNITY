@@ -14,16 +14,12 @@ public class SettingsManager : MonoBehaviour
     public ObscuredInt Resource3PerHour = 1;
     public ObscuredInt Resource4PerHour = 1;
     public ObscuredDouble LastResourceCollectionTime = double.MinValue;
+
+    public ObscuredInt Resource1Amount;
+    public ObscuredInt Resource2Amount;
+    public ObscuredInt Resource3Amount;
+    public ObscuredInt Resource4Amount;
     
-    public ObscuredInt Resource1Amount { get {return resource1Amount;} }
-    public ObscuredInt Resource2Amount { get {return resource2Amount;} }
-    public ObscuredInt Resource3Amount { get {return resource3Amount;} }
-    public ObscuredInt Resource4Amount { get {return resource4Amount;} }
-    
-    private ObscuredInt resource1Amount;
-    private ObscuredInt resource2Amount;
-    private ObscuredInt resource3Amount;
-    private ObscuredInt resource4Amount;
 
     void Awake()
     {
@@ -51,10 +47,10 @@ public class SettingsManager : MonoBehaviour
         ObscuredPrefs.Set("Resource3PerHour", Resource3PerHour);
         ObscuredPrefs.Set("Resource4PerHour", Resource4PerHour);
         ObscuredPrefs.Set("LastResourceCollectionTime", LastResourceCollectionTime);
-        ObscuredPrefs.Set("Resource1Amount", resource1Amount);
-        ObscuredPrefs.Set("Resource2Amount", resource2Amount);
-        ObscuredPrefs.Set("Resource3Amount", resource3Amount);
-        ObscuredPrefs.Set("Resource4Amount", resource4Amount);
+        ObscuredPrefs.Set("Resource1Amount", Resource1Amount);
+        ObscuredPrefs.Set("Resource2Amount", Resource2Amount);
+        ObscuredPrefs.Set("Resource3Amount", Resource3Amount);
+        ObscuredPrefs.Set("Resource4Amount", Resource4Amount);
         
         ObscuredPrefs.Save();
         
@@ -67,9 +63,9 @@ public class SettingsManager : MonoBehaviour
         Resource3PerHour = ObscuredPrefs.Get("Resource3PerHour", Resource3PerHour);
         Resource4PerHour = ObscuredPrefs.Get("Resource4PerHour", Resource4PerHour);
         LastResourceCollectionTime = ObscuredPrefs.Get("LastResourceCollectionTime", LastResourceCollectionTime);
-        resource1Amount = ObscuredPrefs.Get("Resource1Amount", 0);
-        resource2Amount = ObscuredPrefs.Get("Resource2Amount", 0);
-        resource3Amount = ObscuredPrefs.Get("Resource3Amount", 0);
-        resource4Amount = ObscuredPrefs.Get("Resource4Amount", 0);
+        Resource1Amount = ObscuredPrefs.Get("Resource1Amount", 0);
+        Resource2Amount = ObscuredPrefs.Get("Resource2Amount", 0);
+        Resource3Amount = ObscuredPrefs.Get("Resource3Amount", 0);
+        Resource4Amount = ObscuredPrefs.Get("Resource4Amount", 0);
     }
 }
