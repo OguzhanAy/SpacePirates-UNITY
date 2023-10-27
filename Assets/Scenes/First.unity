@@ -377,6 +377,7 @@ Transform:
   - {fileID: 1325569187}
   - {fileID: 296790022}
   - {fileID: 1487434025}
+  - {fileID: 720436187}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -685,6 +686,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539553184}
   m_CullTransparentMesh: 0
+--- !u!1 &720436186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 720436187}
+  - component: {fileID: 720436188}
+  m_Layer: 0
+  m_Name: Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &720436187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720436186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 265291944}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &720436188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720436186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34b944c05b6f3ef47a69467134b9c74b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Resource1PerHour:
+    currentCryptoKey: 1280194263
+    hiddenValue: 1280194262
+    inited: 1
+    fakeValue: 1
+    fakeValueActive: 1
+  Resource2PerHour:
+    currentCryptoKey: 2048144372
+    hiddenValue: 2048144369
+    inited: 1
+    fakeValue: 5
+    fakeValueActive: 1
+  Resource3PerHour:
+    currentCryptoKey: 1410670323
+    hiddenValue: 1410670329
+    inited: 1
+    fakeValue: 10
+    fakeValueActive: 1
+  Resource4PerHour:
+    currentCryptoKey: 1505447259
+    hiddenValue: 1505447283
+    inited: 1
+    fakeValue: 40
+    fakeValueActive: 1
+  LastResourceCollectionTime:
+    migratedVersion: 
+    currentCryptoKey: 7603669456557869033
+    hiddenValue: 1550761824282929543
+    hiddenValueOldByte8:
+      b1: 0
+      b2: 0
+      b3: 0
+      b4: 0
+      b5: 0
+      b6: 0
+      b7: 0
+      b8: 0
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 1
 --- !u!1 &731884700
 GameObject:
   m_ObjectHideFlags: 0
