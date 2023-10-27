@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using CodeStage.AntiCheat.ObscuredTypes;
 using CodeStage.AntiCheat.Storage;
+using UnityEditor;
 using UnityEngine;
 
 public class SettingsManager : MonoBehaviour
@@ -14,46 +15,40 @@ public class SettingsManager : MonoBehaviour
     public ObscuredInt Resource3PerHour = 1;
     public ObscuredInt Resource4PerHour = 1;
     public ObscuredDouble LastResourceCollectionTime = double.MinValue;
-<<<<<<< Updated upstream
-    
-    public ObscuredInt Resource1Amount { get {return resource1Amount;} }
-    public ObscuredInt Resource2Amount { get {return resource2Amount;} }
-    public ObscuredInt Resource3Amount { get {return resource3Amount;} }
-    public ObscuredInt Resource4Amount { get {return resource4Amount;} }
-    
-    private ObscuredInt resource1Amount;
-    private ObscuredInt resource2Amount;
-    private ObscuredInt resource3Amount;
-    private ObscuredInt resource4Amount;
-=======
-
-
-    public ObscuredInt Resource1Amount;
-    public ObscuredInt Resource2Amount;
-    public ObscuredInt Resource3Amount;
-    public ObscuredInt Resource4Amount;
-    
-
     public ObscuredFloat Resource1Amount;
     public ObscuredFloat Resource2Amount;
     public ObscuredFloat Resource3Amount;
     public ObscuredFloat Resource4Amount;
 
->>>>>>> Stashed changes
-
+    
+    private ObscuredFloat resource1Amount;
+    private ObscuredFloat resource2Amount;
+    private ObscuredFloat resource3Amount;
+    private ObscuredFloat resource4Amount;
+    
     void Awake()
     {
-        DontDestroyOnLoad(Instance);
+        DontDestroyOnLoad(this);
         if (Instance == null)
         {
             Instance = this;
         }
         else
         {
-            Destroy(Instance);                
+            Destroy(gameObject);                
         }
         
     }
+
+#if UNITY_EDITOR
+    [MenuItem("Moon Games/CN SpacePirates/DeleteSettings")]
+    static void DeleteSaveData()
+    {
+        ObscuredPrefs.DeleteAll();
+        Debug.Log("All keys have been deleted");
+    }
+    
+#endif
 
     private void Start()
     {
