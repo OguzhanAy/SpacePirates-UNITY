@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using CodeStage.AntiCheat.ObscuredTypes;
 using CodeStage.AntiCheat.Storage;
+using UnityEditor;
 using UnityEngine;
 
 public class SettingsManager : MonoBehaviour
@@ -15,25 +16,44 @@ public class SettingsManager : MonoBehaviour
     public ObscuredInt Resource4PerHour = 1;
     public ObscuredDouble LastResourceCollectionTime = double.MinValue;
 
+<<<<<<< Updated upstream
     public ObscuredInt Resource1Amount;
     public ObscuredInt Resource2Amount;
     public ObscuredInt Resource3Amount;
     public ObscuredInt Resource4Amount;
     
+=======
+    public ObscuredFloat Resource1Amount;
+    public ObscuredFloat Resource2Amount;
+    public ObscuredFloat Resource3Amount;
+    public ObscuredFloat Resource4Amount;
+>>>>>>> Stashed changes
 
     void Awake()
     {
-        DontDestroyOnLoad(Instance);
+        DontDestroyOnLoad(this);
         if (Instance == null)
         {
             Instance = this;
         }
         else
         {
-            Destroy(Instance);                
+            Destroy(gameObject);                
         }
         
     }
+
+    
+#if UNITY_EDITOR
+    [MenuItem("Moon Games/CN Space Pirates/Delete Settings")] 
+    static void DeleteSaveData()
+    {
+        ObscuredPrefs.DeleteAll();
+        Debug.Log("All keys have been deleted ");
+    }
+    
+#endif    
+    
 
     private void Start()
     {
