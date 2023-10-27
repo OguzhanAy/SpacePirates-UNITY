@@ -14,6 +14,7 @@ public class SettingsManager : MonoBehaviour
     public ObscuredInt Resource3PerHour = 1;
     public ObscuredInt Resource4PerHour = 1;
     public ObscuredDouble LastResourceCollectionTime = double.MinValue;
+<<<<<<< Updated upstream
     
     public ObscuredInt Resource1Amount { get {return resource1Amount;} }
     public ObscuredInt Resource2Amount { get {return resource2Amount;} }
@@ -24,6 +25,21 @@ public class SettingsManager : MonoBehaviour
     private ObscuredInt resource2Amount;
     private ObscuredInt resource3Amount;
     private ObscuredInt resource4Amount;
+=======
+
+
+    public ObscuredInt Resource1Amount;
+    public ObscuredInt Resource2Amount;
+    public ObscuredInt Resource3Amount;
+    public ObscuredInt Resource4Amount;
+    
+
+    public ObscuredFloat Resource1Amount;
+    public ObscuredFloat Resource2Amount;
+    public ObscuredFloat Resource3Amount;
+    public ObscuredFloat Resource4Amount;
+
+>>>>>>> Stashed changes
 
     void Awake()
     {
