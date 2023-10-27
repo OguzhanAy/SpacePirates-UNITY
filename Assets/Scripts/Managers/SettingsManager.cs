@@ -15,19 +15,18 @@ public class SettingsManager : MonoBehaviour
     public ObscuredInt Resource3PerHour = 1;
     public ObscuredInt Resource4PerHour = 1;
     public ObscuredDouble LastResourceCollectionTime = double.MinValue;
-
-<<<<<<< Updated upstream
-    public ObscuredInt Resource1Amount;
-    public ObscuredInt Resource2Amount;
-    public ObscuredInt Resource3Amount;
-    public ObscuredInt Resource4Amount;
-    
-=======
     public ObscuredFloat Resource1Amount;
     public ObscuredFloat Resource2Amount;
     public ObscuredFloat Resource3Amount;
     public ObscuredFloat Resource4Amount;
->>>>>>> Stashed changes
+
+    
+    private ObscuredFloat resource1Amount;
+    private ObscuredFloat resource2Amount;
+    private ObscuredFloat resource3Amount;
+    private ObscuredFloat resource4Amount; 
+
+
 
     void Awake()
     {
@@ -43,7 +42,6 @@ public class SettingsManager : MonoBehaviour
         
     }
 
-    
 #if UNITY_EDITOR
     [MenuItem("Moon Games/CN Space Pirates/Delete Settings")] 
     static void DeleteSaveData()
@@ -54,6 +52,7 @@ public class SettingsManager : MonoBehaviour
     
 #endif    
     
+
 
     private void Start()
     {
@@ -83,9 +82,9 @@ public class SettingsManager : MonoBehaviour
         Resource3PerHour = ObscuredPrefs.Get("Resource3PerHour", Resource3PerHour);
         Resource4PerHour = ObscuredPrefs.Get("Resource4PerHour", Resource4PerHour);
         LastResourceCollectionTime = ObscuredPrefs.Get("LastResourceCollectionTime", LastResourceCollectionTime);
-        Resource1Amount = ObscuredPrefs.Get("Resource1Amount", 0);
-        Resource2Amount = ObscuredPrefs.Get("Resource2Amount", 0);
-        Resource3Amount = ObscuredPrefs.Get("Resource3Amount", 0);
-        Resource4Amount = ObscuredPrefs.Get("Resource4Amount", 0);
+        resource1Amount = ObscuredPrefs.Get("Resource1Amount", 0);
+        resource2Amount = ObscuredPrefs.Get("Resource2Amount", 0);
+        resource3Amount = ObscuredPrefs.Get("Resource3Amount", 0);
+        resource4Amount = ObscuredPrefs.Get("Resource4Amount", 0);
     }
 }
