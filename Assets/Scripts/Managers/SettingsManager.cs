@@ -19,7 +19,7 @@ public class SettingsManager : MonoBehaviour
     public ObscuredFloat Resource2Amount;
     public ObscuredFloat Resource3Amount;
     public ObscuredFloat Resource4Amount;
-    
+
     void Awake()
     {
         DontDestroyOnLoad(this);
@@ -35,14 +35,16 @@ public class SettingsManager : MonoBehaviour
     }
 
 #if UNITY_EDITOR
-    [MenuItem("Moon Games/CN SpacePirates/DeleteSettings")]
+    [MenuItem("Moon Games/CN Space Pirates/Delete Settings")] 
     static void DeleteSaveData()
     {
         ObscuredPrefs.DeleteAll();
-        Debug.Log("All keys have been deleted");
+        Debug.Log("All keys have been deleted ");
     }
     
-#endif
+#endif    
+    
+
 
     private void Start()
     {
@@ -51,6 +53,7 @@ public class SettingsManager : MonoBehaviour
 
     public void Save()
     {
+
         ObscuredPrefs.Set("Resource1PerHour", (int)Resource1PerHour);
         ObscuredPrefs.Set("Resource2PerHour", (int)Resource2PerHour);
         ObscuredPrefs.Set("Resource3PerHour", (int)Resource3PerHour);
