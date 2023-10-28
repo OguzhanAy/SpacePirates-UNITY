@@ -17,13 +17,16 @@ public class ResourceManager : MonoBehaviour
         {
             int minutesPassedSinceLastShutdown = 
                 Mathf.FloorToInt((float)(DateTime.Now - DateTime.FromOADate(SettingsManager.Instance.LastResourceCollectionTime)).TotalMinutes);
-            
+
+            if (minutesPassedSinceLastShutdown>0)
+            {
             SettingsManager.Instance.Resource1Amount += (SettingsManager.Instance.Resource1PerHour / 60f)* minutesPassedSinceLastShutdown ;
             SettingsManager.Instance.Resource2Amount += (SettingsManager.Instance.Resource2PerHour / 60f)* minutesPassedSinceLastShutdown;
             SettingsManager.Instance.Resource3Amount += (SettingsManager.Instance.Resource3PerHour / 60f)* minutesPassedSinceLastShutdown;
             SettingsManager.Instance.Resource4Amount += (SettingsManager.Instance.Resource4PerHour / 60f)* minutesPassedSinceLastShutdown;
+                SettingsManager.Instance.Save();
+            }
 
-            SettingsManager.Instance.Save();
         }
         
         StartCoroutine(CollectResources());
@@ -39,7 +42,8 @@ public class ResourceManager : MonoBehaviour
             SettingsManager.Instance.Resource2Amount += SettingsManager.Instance.Resource2PerHour / 60f;
             SettingsManager.Instance.Resource3Amount += SettingsManager.Instance.Resource3PerHour / 60f;
             SettingsManager.Instance.Resource4Amount += SettingsManager.Instance.Resource4PerHour / 60f;
-            
+
+            SettingsManager.Instance.LastResourceCollectionTime = DateTime.Now.ToOADate();
             SettingsManager.Instance.Save();
             
         }

@@ -11,7 +11,12 @@ public class UIMenuManager : MonoBehaviour
     public GameObject PnlSinglePlayer;
     
     public GameObject ScreenBase;
-    public Text ScreenTitle; 
+    public Text ScreenTitle;
+    public Text Resource1;
+    public Text Resource2;
+    public Text Resource3;
+    public Text Resource4;
+    
         
     public const int SP_SCREEN_HOME = 0;
     public const int SP_SCREEN_HQ = 1;
@@ -33,8 +38,12 @@ public class UIMenuManager : MonoBehaviour
 
         localizedTable = LocalizedTable.GetTable();
 
+        StartCoroutine(DisplayResources());
+
 
     }
+
+    
 
     public void DisplaySinglePlayer()
     {
@@ -88,6 +97,16 @@ public class UIMenuManager : MonoBehaviour
         currentScreen = screen;
     }
     
-    
+    IEnumerator DisplayResources()
+    {
+        while (true)
+        {
+            Resource1.text = Mathf.FloorToInt(SettingsManager.Instance.Resource1Amount).ToString();
+            Resource2.text = Mathf.FloorToInt(SettingsManager.Instance.Resource2Amount).ToString();
+            Resource3.text = Mathf.FloorToInt(SettingsManager.Instance.Resource3Amount).ToString();
+            Resource4.text = Mathf.FloorToInt(SettingsManager.Instance.Resource4Amount).ToString();
+            yield return new WaitForSeconds(60);
+        }
+    }
     
 }

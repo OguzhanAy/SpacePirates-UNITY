@@ -20,14 +20,6 @@ public class SettingsManager : MonoBehaviour
     public ObscuredFloat Resource3Amount;
     public ObscuredFloat Resource4Amount;
 
-    
-    private ObscuredFloat resource1Amount;
-    private ObscuredFloat resource2Amount;
-    private ObscuredFloat resource3Amount;
-    private ObscuredFloat resource4Amount; 
-
-
-
     void Awake()
     {
         DontDestroyOnLoad(this);
@@ -39,7 +31,7 @@ public class SettingsManager : MonoBehaviour
         {
             Destroy(gameObject);                
         }
-        
+        Load();
     }
 
 #if UNITY_EDITOR
@@ -56,20 +48,21 @@ public class SettingsManager : MonoBehaviour
 
     private void Start()
     {
-        Load();
+        
     }
 
     public void Save()
     {
-        ObscuredPrefs.Set("Resource1PerHour", Resource1PerHour);
-        ObscuredPrefs.Set("Resource2PerHour", Resource2PerHour);
-        ObscuredPrefs.Set("Resource3PerHour", Resource3PerHour);
-        ObscuredPrefs.Set("Resource4PerHour", Resource4PerHour);
-        ObscuredPrefs.Set("LastResourceCollectionTime", LastResourceCollectionTime);
-        ObscuredPrefs.Set("Resource1Amount", Resource1Amount);
-        ObscuredPrefs.Set("Resource2Amount", Resource2Amount);
-        ObscuredPrefs.Set("Resource3Amount", Resource3Amount);
-        ObscuredPrefs.Set("Resource4Amount", Resource4Amount);
+
+        ObscuredPrefs.Set("Resource1PerHour", (int)Resource1PerHour);
+        ObscuredPrefs.Set("Resource2PerHour", (int)Resource2PerHour);
+        ObscuredPrefs.Set("Resource3PerHour", (int)Resource3PerHour);
+        ObscuredPrefs.Set("Resource4PerHour", (int)Resource4PerHour);
+        ObscuredPrefs.Set("LastResourceCollectionTime", (double)LastResourceCollectionTime);
+        ObscuredPrefs.Set("Resource1Amount", (float)Resource1Amount);
+        ObscuredPrefs.Set("Resource2Amount", (float)Resource2Amount);
+        ObscuredPrefs.Set("Resource3Amount", (float)Resource3Amount);
+        ObscuredPrefs.Set("Resource4Amount", (float)Resource4Amount);
         
         ObscuredPrefs.Save();
         
@@ -77,14 +70,14 @@ public class SettingsManager : MonoBehaviour
 
     public void Load()
     {
-        Resource1PerHour = ObscuredPrefs.Get("Resource1PerHour", Resource1PerHour);
-        Resource2PerHour = ObscuredPrefs.Get("Resource2PerHour", Resource2PerHour);
-        Resource3PerHour = ObscuredPrefs.Get("Resource3PerHour", Resource3PerHour);
-        Resource4PerHour = ObscuredPrefs.Get("Resource4PerHour", Resource4PerHour);
-        LastResourceCollectionTime = ObscuredPrefs.Get("LastResourceCollectionTime", LastResourceCollectionTime);
-        resource1Amount = ObscuredPrefs.Get("Resource1Amount", 0);
-        resource2Amount = ObscuredPrefs.Get("Resource2Amount", 0);
-        resource3Amount = ObscuredPrefs.Get("Resource3Amount", 0);
-        resource4Amount = ObscuredPrefs.Get("Resource4Amount", 0);
+        Resource1PerHour = ObscuredPrefs.Get("Resource1PerHour", (int)Resource1PerHour);
+        Resource2PerHour = ObscuredPrefs.Get("Resource2PerHour", (int)Resource2PerHour);
+        Resource3PerHour = ObscuredPrefs.Get("Resource3PerHour", (int)Resource3PerHour);
+        Resource4PerHour = ObscuredPrefs.Get("Resource4PerHour", (int)Resource4PerHour);
+        LastResourceCollectionTime = ObscuredPrefs.Get("LastResourceCollectionTime", (double)LastResourceCollectionTime);
+        Resource1Amount = ObscuredPrefs.Get("Resource1Amount", (float)Resource1Amount);
+        Resource2Amount = ObscuredPrefs.Get("Resource2Amount", (float)Resource2Amount);
+        Resource3Amount = ObscuredPrefs.Get("Resource3Amount", (float)Resource3Amount);
+        Resource4Amount = ObscuredPrefs.Get("Resource4Amount", (float)Resource4Amount);
     }
 }
