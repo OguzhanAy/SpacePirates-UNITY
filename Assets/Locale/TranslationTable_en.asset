@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: 0acfc783a5ca24c4e8483eda16518718, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 4334448641211105295
   m_TableData:
   - m_Id: 6479544320
     m_Localized: PLAY AS GUEST
@@ -42,6 +43,260 @@ MonoBehaviour:
     m_Localized: Hangar
     m_Metadata:
       m_Items: []
+  - m_Id: 11217989147164672
+    m_Localized: Energy Teknology
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11218349987332096
+    m_Localized: "Yo\u011Funla\u015Ft\u0131r\u0131c\u0131"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11220162329313280
+    m_Localized: "\u0130nce Lazer"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11220232894283776
+    m_Localized: "Kristal Ya\u011Flay\u0131c\u0131"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11220331477204992
+    m_Localized: "Ekstra G\xFC\xE7l\xFC Deliciler"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11220468643528704
+    m_Localized: "Uzay Ke\u015Ffi"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11220697824493568
+    m_Localized: "Sinyal G\xFC\xE7lendirici"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11220738857369600
+    m_Localized: Sonar
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11229262257717248
+    m_Localized: Basic Sciences
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11229432311578624
+    m_Localized: "Ara\u015Ft\u0131rma Y\xF6ntemleri"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11229533847289856
+    m_Localized: "Ak\u0131ll\u0131 Laboratuvar"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11229717759131648
+    m_Localized: "Ara\u015Ft\u0131rma h\u0131z\u0131n\u0131 %1 artt\u0131r\u0131r\r"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11229867718082560
+    m_Localized: "Laboratuvar teknolojilerini iyile\u015Ftirerek baz\u0131 yeni teknolojilerin
+      ara\u015Ft\u0131r\u0131labilmesini sa\u011Flar\r"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11230032365486080
+    m_Localized: "Kaynak 4'\xFCn toplay\u0131c\u0131 reakt\xF6r\xFCn\xFC g\xFC\xE7lendirerek
+      saatlik Kaynak 4 \xFCretimini %10 artt\u0131r\u0131r\r"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11230416031055872
+    m_Localized: "Kristalleri daha ince keserek Kaynak 3'ten %10 daha fazla elde
+      edilmesini sa\u011Flar\r"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11230518606954496
+    m_Localized: "Kristal kesimini daha y\xFCksek s\u0131cakl\u0131kta yaparak Kaynak
+      2'den %10 daha fazla elde edilmesini sa\u011Flar\r"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11230640808001536
+    m_Localized: "Hammaddeleri daha derinden kaz\u0131yarak Kaynak 1 imalat\u0131n\u0131
+      %10 artt\u0131r\u0131r\r"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11230753517338624
+    m_Localized: "Radar sinyallerinizi g\xFC\xE7lendirerek Y\u0131ld\u0131z Haritas\u0131'n\u0131n
+      daha uzak k\xF6\u015Felerini alg\u0131laman\u0131z\u0131 sa\u011Flar\r"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11230887500185600
+    m_Localized: "Y\u0131ld\u0131z Haritas\u0131 \xFCzerinde taranan gezegenlerdeki
+      kaynaklar\u0131n yakla\u015F\u0131k miktar\u0131n\u0131 belirler"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11233044819476480
+    m_Localized: "Radar sinyallerinizi daha da g\xFC\xE7lendirerek Y\u0131ld\u0131z
+      Haritas\u0131'n\u0131n daha da uzak k\xF6\u015Felerini alg\u0131laman\u0131z\u0131
+      sa\u011Flar\r"
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 11535554255912960
+    m_Localized: Upgrade
+    m_Metadata:
+      m_Items:
+      - rid: 4334448641211105295
+  - m_Id: 13121371449458688
+    m_Localized: "Sinyal G\xFC\xE7lendirici 2"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13789751210803200
+    m_Localized: Completed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13807428721573888
+    m_Localized: Research
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13831190464561152
+    m_Localized: Space-Time Manipulation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13832767321538560
+    m_Localized: "Merkezi Uzay B\xFCk\xFCc\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13832998368968704
+    m_Localized: "Ana \xFCss\xFCm\xFCz\xFCn uzay-zaman e\u011Frisini b\xFCkerek yak\u0131n
+      y\u0131ld\u0131z sistemlerine gidi\u015Fi h\u0131zland\u0131r\u0131r\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13833137829576704
+    m_Localized: "K\xFCtle \xC7ekimi Ayarlay\u0131c\u0131s\u0131\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13833315127001088
+    m_Localized: "T\xFCm gemilerimizin gezegen ve asteroidlerin k\xFCtle \xE7ekiminden
+      faydalanmas\u0131n\u0131 sa\u011Flar, b\xF6ylece t\xFCm gemilerimiz %10 h\u0131zlan\u0131r\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13833422232748032
+    m_Localized: "K\xFCtle \xC7ekimi Ayarlay\u0131c\u0131s\u0131 2\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13833641817145344
+    m_Localized: "T\xFCm gemilerimizin gezegen ve asteroidlerin k\xFCtle \xE7ekiminden
+      faydalanmas\u0131n\u0131 sa\u011Flar, b\xF6ylece t\xFCm gemilerimiz toplamda
+      %15 h\u0131zlan\u0131r\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13833804619055104
+    m_Localized: "Y\u0131ld\u0131zlar Aras\u0131 Kolonile\u015Ftirme\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13833936357949440
+    m_Localized: "Mobil Kaz\u0131c\u0131\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13833998030995456
+    m_Localized: "Yabanc\u0131 gezegen ve asteroitlere mobile madenler kurarak onlardan
+      kaynak \xE7\u0131karmay\u0131 m\xFCmk\xFCn k\u0131lar\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834102280421376
+    m_Localized: Silahlar ve Savunma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834225391632384
+    m_Localized: "Lazer Silahlar\u0131\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834324645642240
+    m_Localized: "Lazerin silahlarda kullan\u0131labilmesinin yolunu a\xE7ar\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834449468129280
+    m_Localized: "Lazer Bataryas\u0131\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834584889622528
+    m_Localized: "Lazerin silahlar\u0131n\u0131n batarya teknolojisini geli\u015Ftirerek
+      g\xFCc\xFCn\xFC %10 artt\u0131r\u0131r\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834651096711168
+    m_Localized: "Lazer Savunmas\u0131\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834733602865152
+    m_Localized: "Ana \xFCss\xFCm\xFCz\xFCn lazerli silahlarla korunmas\u0131n\u0131
+      sa\u011Flayarak fazladan savunma g\xFCc\xFC verir\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834796286738432
+    m_Localized: "\xC7iftli Lazer\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834865807327232
+    m_Localized: "Lazer silahlar\u0131n\u0131n tek namlusundan iki at\u0131\u015F
+      \xE7\u0131kmas\u0131n\u0131 sa\u011Flar\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834964025344000
+    m_Localized: "Lazer Bataryas\u0131 H\u0131zl\u0131 \u015Earj\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13835142836912128
+    m_Localized: "Lazerin silahlar\u0131n\u0131n %10 daha h\u0131zl\u0131 ate\u015F
+      etmesini sa\u011Flar\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13835219307462656
+    m_Localized: "Proton Silahlar\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13835263767085056
+    m_Localized: "Silah m\xFChimmat\u0131 proton tabanl\u0131 ate\u015F g\xFCc\xFCyle
+      \xE7al\u0131\u015Fan yeni silahlar geli\u015Ftirilmesinin \xF6n\xFCn\xFC a\xE7ar\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13835449155321856
+    m_Localized: "Proton Sal\u0131n\u0131m\u0131\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13835616050872320
+    m_Localized: "Proton silahlar\u0131n\u0131n kimyas\u0131n\u0131 geli\u015Ftirerek
+      g\xFCc\xFCn\xFC %10 artt\u0131r\u0131r\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13835685307219968
+    m_Localized: "Proton Savunmas\u0131\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13835734367993856
+    m_Localized: "Ana \xFCss\xFCm\xFCz\xFCn proton m\xFChimmatl\u0131 silahlarla
+      korunmas\u0131n\u0131 sa\u011Flayarak fazladan savunma g\xFCc\xFC verir\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14545745373167616
+    m_Localized: Not Enough Resources
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 4334448641211105295
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0000f65bf4e427000000b6d933dd27000000f64b2add27000000f6ffd4dc27000000b6eff4dc27000000f60bbedc27000000f69daddc27000000f6a507db2700000036a2b3da27000000f6f31be527000000f69733e527000000365481e527000000f6695ee52700000036fe00e627000000f6a9a7e52700000036e018e627000000f65335e627000000f6914fe627000000f6c36ee627000000b68586fb28000000360e65e82700

@@ -16,7 +16,7 @@ public class ResourceManager : MonoBehaviour
         else
         {
             int minutesPassedSinceLastShutdown = 
-                Mathf.FloorToInt((float)(DateTime.Now - DateTime.FromOADate(SettingsManager.Instance.LastResourceCollectionTime)).TotalMinutes);
+                Mathf.FloorToInt((float)(Utility.GetTime() - DateTime.FromOADate(SettingsManager.Instance.LastResourceCollectionTime)).TotalMinutes);
 
             if (minutesPassedSinceLastShutdown>0)
             {
@@ -43,7 +43,7 @@ public class ResourceManager : MonoBehaviour
             SettingsManager.Instance.Resource3Amount += SettingsManager.Instance.Resource3PerHour / 60f;
             SettingsManager.Instance.Resource4Amount += SettingsManager.Instance.Resource4PerHour / 60f;
 
-            SettingsManager.Instance.LastResourceCollectionTime = DateTime.Now.ToOADate();
+            SettingsManager.Instance.LastResourceCollectionTime = Utility.GetTime().ToOADate();
             SettingsManager.Instance.Save();
             
         }

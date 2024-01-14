@@ -14,7 +14,7 @@ public class UIStandard : MonoBehaviour
     public GameObject UIConfirm;
     public GameObject UIPrompt;
 
-    private float fadeDuration = .3f;
+    
     
     void Start()
     {
@@ -132,7 +132,7 @@ public class UIStandard : MonoBehaviour
         
         CanvasGroup canvasGroup = UIBackground.GetComponent<CanvasGroup>();
         canvasGroup.alpha = 0.0f;
-        canvasGroup.DOFade(1, fadeDuration).SetEase(Ease.Linear);
+        canvasGroup.DOFade(1, SettingsManager.Instance.ScreenInterval).SetEase(Ease.Linear);
     }
 
     private void CloseElement(Action onOk)
@@ -143,9 +143,9 @@ public class UIStandard : MonoBehaviour
     IEnumerator CloseElementBg(Action onOk)
     {
         CanvasGroup canvasGroup = UIBackground.GetComponent<CanvasGroup>();
-        canvasGroup.DOFade(0, fadeDuration).SetEase(Ease.Linear);
+        canvasGroup.DOFade(0, SettingsManager.Instance.ScreenInterval).SetEase(Ease.Linear);
 
-        yield return new WaitForSeconds(fadeDuration);
+        yield return new WaitForSeconds(SettingsManager.Instance.ScreenInterval);
 
         onOk?.Invoke();
         UIBackground.SetActive(false);

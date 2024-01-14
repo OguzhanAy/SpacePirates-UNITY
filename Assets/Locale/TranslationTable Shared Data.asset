@@ -39,6 +39,214 @@ MonoBehaviour:
     m_Key: btnWorkshop
     m_Metadata:
       m_Items: []
+  - m_Id: 11217989147164672
+    m_Key: resEnergyTeknology
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11218349987332096
+    m_Key: resYogunlastirici
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11220162329313280
+    m_Key: resIncelazer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11220232894283776
+    m_Key: resKristalYaglayici
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11220331477204992
+    m_Key: resEkstraGucluDeliciler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11220468643528704
+    m_Key: resUzayKesfi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11220697824493568
+    m_Key: resSinyalGuclendirici
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11220738857369600
+    m_Key: resSonar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11229262257717248
+    m_Key: resTemelBilimler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11229432311578624
+    m_Key: resArastirmaYontemleri
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11229533847289856
+    m_Key: "resAk\u0131ll\u0131Laboratuvar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11229717759131648
+    m_Key: resArastirmaYontemleriDecs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11229867718082560
+    m_Key: "resAk\u0131ll\u0131LaboratuvarDesc"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11230032365486080
+    m_Key: resYogunlastiriciDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11230416031055872
+    m_Key: resInceLazerDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11230518606954496
+    m_Key: resKristalYaglayiciDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11230640808001536
+    m_Key: resEkstraGucluDelicilerDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11230753517338624
+    m_Key: resSinyalGuclendiriciDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11230887500185600
+    m_Key: resSonarDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11233044819476480
+    m_Key: "resSinyalG\xFCclendiriciIkiDesc"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11535554255912960
+    m_Key: resUpgrade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13121371449458688
+    m_Key: "resSinyalG\xFCclendiriciIki"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13789751210803200
+    m_Key: strCompleted
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13807428721573888
+    m_Key: strResearch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13831190464561152
+    m_Key: "resUzayZamanManip\xFClasyonu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13832767321538560
+    m_Key: resMerkeziUzayBukucu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13832998368968704
+    m_Key: resMerkeziUzayBukucuDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13833137829576704
+    m_Key: resKutleCekimAyarlayicisi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13833315127001088
+    m_Key: resKutleCekimAyarlayicisiDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13833422232748032
+    m_Key: resKutleCekimAyarlayicisi2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13833641817145344
+    m_Key: resKutleCekimAyarlayicisi2Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13833804619055104
+    m_Key: resYildizlarArasiKolonilestirme
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13833936357949440
+    m_Key: resMobilKazici
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13833998030995456
+    m_Key: resMobilKaziciDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834102280421376
+    m_Key: resSilahlarveSavunma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834225391632384
+    m_Key: "resLazerSilahlar\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834324645642240
+    m_Key: "resLazerSilahlar\u0131Desc"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834449468129280
+    m_Key: resLazerBataryasi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834584889622528
+    m_Key: resLazerBataryasiDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834651096711168
+    m_Key: resLazerSavunmasi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834733602865152
+    m_Key: resLazerSavunmasiDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834796286738432
+    m_Key: resCiftliLazer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834865807327232
+    m_Key: resCiftliLazerDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13834964025344000
+    m_Key: resLazerBataryasiHizliSarz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13835142836912128
+    m_Key: resLazerBataryasiHizliSarzDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13835219307462656
+    m_Key: resProtonSilahlari
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13835263767085056
+    m_Key: resProtonSilahlariDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13835449155321856
+    m_Key: resProtonSalinimi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13835616050872320
+    m_Key: resProtonSalinimiDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13835685307219968
+    m_Key: resProtonSavunmasi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13835734367993856
+    m_Key: resProtonSavunmasiDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14545745373167616
+    m_Key: resNotEnoughResources
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

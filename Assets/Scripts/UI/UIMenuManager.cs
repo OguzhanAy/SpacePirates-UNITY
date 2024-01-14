@@ -11,6 +11,7 @@ public class UIMenuManager : MonoBehaviour
     public GameObject PnlSinglePlayer;
     
     public GameObject ScreenBase;
+    public GameObject ScreenResearch;
     public Text ScreenTitle;
     public Text Resource1;
     public Text Resource2;
@@ -24,23 +25,18 @@ public class UIMenuManager : MonoBehaviour
     public const int SP_SCREEN_Lab = 3;
     public const int SP_SCREEN_Workshop = 4;
 
-    public LocalizedStringTable LocalizedTable;
+    
 
     int currentScreen = SP_SCREEN_HOME;
-    StringTable localizedTable;
+   
 
-    private const float SCREEN_INTERVAL = 0.3f;
+    
     
     void Start()
     {
         ScreenBase.SetActive(false);
         PnlSinglePlayer.SetActive(false);
-
-        localizedTable = LocalizedTable.GetTable();
-
         StartCoroutine(DisplayResources());
-
-
     }
 
     
@@ -65,8 +61,8 @@ public class UIMenuManager : MonoBehaviour
         RectTransform rect = ScreenBase.GetComponent<RectTransform>();
         if (screen == SP_SCREEN_HOME)
         {
-            rect.DOAnchorPosX(Screen.width, SCREEN_INTERVAL);
-            yield return new WaitForSeconds(SCREEN_INTERVAL);
+            rect.DOAnchorPosX(Screen.width, SettingsManager.Instance.ScreenInterval);
+            yield return new WaitForSeconds(SettingsManager.Instance.ScreenInterval);
             ScreenBase.SetActive(false);
 
         }
@@ -74,21 +70,23 @@ public class UIMenuManager : MonoBehaviour
         {
             ScreenBase.SetActive(true);
             rect.anchoredPosition = new Vector2(Screen.width, 0);
-            rect.DOAnchorPosX(0, SCREEN_INTERVAL);
+            rect.DOAnchorPosX(0, SettingsManager.Instance.ScreenInterval);
 
+            ScreenResearch.SetActive(screen == SP_SCREEN_Lab);
+            
             switch (screen)        
             {               
                 case SP_SCREEN_HQ:
-                    ScreenTitle.text = localizedTable.GetEntry("btnHQ").Value;
+                    ScreenTitle.text = LocalizationManager.Instance.Translate("btnHQ");
                     break;
                 case SP_SCREEN_Hangar:
-                    ScreenTitle.text = localizedTable.GetEntry("btnHangar").Value;
+                    ScreenTitle.text = LocalizationManager.Instance.Translate("btnHangar");
                     break;
                 case SP_SCREEN_Lab:
-                    ScreenTitle.text = localizedTable.GetEntry("btnLab").Value;
+                    ScreenTitle.text = LocalizationManager.Instance.Translate("btnLab");
                     break;
                 case SP_SCREEN_Workshop:
-                    ScreenTitle.text = localizedTable.GetEntry("btnWorkshop").Value;
+                    ScreenTitle.text = LocalizationManager.Instance.Translate("btnWorkshop");
                     break;                
             }
         }
@@ -101,11 +99,11 @@ public class UIMenuManager : MonoBehaviour
     {
         while (true)
         {
-            Resource1.text = Mathf.FloorToInt(SettingsManager.Instance.Resource1Amount).ToString();
-            Resource2.text = Mathf.FloorToInt(SettingsManager.Instance.Resource2Amount).ToString();
-            Resource3.text = Mathf.FloorToInt(SettingsManager.Instance.Resource3Amount).ToString();
-            Resource4.text = Mathf.FloorToInt(SettingsManager.Instance.Resource4Amount).ToString();
-            yield return new WaitForSeconds(60);
+            Resource1.text = Utility.AmountToString(Mathf.FloorToInt(SettingsManager.Instance.Resource1Amount));
+            Resource2.text = Utility.AmountToString(Mathf.FloorToInt(SettingsManager.Instance.Resource2Amount));
+            Resource3.text = Utility.AmountToString(Mathf.FloorToInt(SettingsManager.Instance.Resource3Amount));
+            Resource4.text = Utility.AmountToString(Mathf.FloorToInt(SettingsManager.Instance.Resource4Amount));
+            yield return new WaitForSeconds(1);
         }
     }
     
