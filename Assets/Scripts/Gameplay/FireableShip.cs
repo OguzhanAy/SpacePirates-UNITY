@@ -19,8 +19,11 @@ public class FireableShip : MonoBehaviour
     public Action<int> OnLifeChanged = null;
 
     protected DateTime lastFireTime = DateTime.MinValue;
-    
-    
+
+    public bool IsDead
+    {
+        get { return isDead; }
+    }
     public int RemainingHP
     {
         get
@@ -68,9 +71,6 @@ public class FireableShip : MonoBehaviour
         {
             isDead = true;
             OnDead?.Invoke();
-            
-            //TODO Level managerde objhect pool a verilip OP üzerinbde destroy yapılması gerek
-            Destroy(gameObject);
         }
         else
         {

@@ -247,6 +247,14 @@ MonoBehaviour:
     m_Key: resNotEnoughResources
     m_Metadata:
       m_Items: []
+  - m_Id: 38166091913363456
+    m_Key: resContinue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38166247039696896
+    m_Key: resMainMenu
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

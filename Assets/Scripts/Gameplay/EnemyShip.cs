@@ -12,7 +12,8 @@ public class EnemyShip : FireableShip
     public ShipLookDirection LookDirection;
     public float MoveSpeed = 1;
     public EnemyWave Wave;
-
+    public float DestructionTime = 0f;
+    
     public GameObject Explosion;
     
     Transform waypointList= null;
@@ -36,17 +37,42 @@ public class EnemyShip : FireableShip
 
         OnDead = () =>
         {
-            //TODO: Bir object pooldan çekilmeli
-            var explosion = Instantiate(Explosion);
+            //Patlamanın çıkması
+            var explosion = LevelMgr.Get(Explosion.name,() =>
+            {
+                return Instantiate(Explosion);
+            });
+            
             explosion.transform.position = transform.position;
             explosion.SetActive(true);
+
+            StartCoroutine(DestroyExplosion(explosion, 5));
+            
+            //Bütün parçların ayrılması
+            Rigidbody rigidbody;
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                rigidbody = transform.GetChild(i).GetComponent<Rigidbody>();
+                if (rigidbody != null)
+                {
+                    rigidbody.isKinematic = false;
+                }
+            }
+            StartCoroutine(RemoveFromScreen());
         };
     }
 
-    
+    IEnumerator DestroyExplosion(GameObject explosion, int duration)
+    {
+        yield return new WaitForSeconds(duration);
+
+        LevelMgr.DestroyObject(Explosion.name, explosion);
+    }
+
+
     void Update()
     {
-        if (waypointList != null && currentWaypoint +1 < waypointList.childCount)
+        if (!IsDead &&waypointList != null && currentWaypoint +1 < waypointList.childCount)
         {
             switch (LookDirection)
             {
@@ -70,16 +96,26 @@ public class EnemyShip : FireableShip
                 {
                     currentWaypoint = -1;
                     waypointList = null;
-                    RemoveFromScreen();
+                    RemoveFromScreenNow();
                 }
             }
         }
-        
-        Fire();
+
+        if (!IsDead)
+        {
+            Fire();
+            
+        }
     }
 
-    private void RemoveFromScreen()
+    private void RemoveFromScreenNow()
     {
+        Wave.DestroyShip(gameObject);
+    }
+
+    IEnumerator RemoveFromScreen()
+    {
+        yield return new WaitForSeconds(DestructionTime);
         Wave.DestroyShip(gameObject);
     }
 }

@@ -271,6 +271,14 @@ MonoBehaviour:
     m_Localized: "Yeterince Kayna\u011F\u0131n\u0131z Yok"
     m_Metadata:
       m_Items: []
+  - m_Id: 38166091913363456
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38166247039696896
+    m_Localized: MAIN MENU
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
